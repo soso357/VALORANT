@@ -1,0 +1,126 @@
+header {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(download.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 50px;
+  
+  min-height: 40px;
+  margin-right: 150px;
+
+  font-size: 18px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(253, 253, 253);
+  padding: 5px 18px;
+  border: 1px solid transparent;
+
+  transition: 0.5 ease;
+}
+
+ul li a:hover {
+  background-color: rgb(196, 172, 64);
+  border-radius: 50px;
+  color: black;
+}
+
+ul li.active a {
+  background-color: rgb(196, 172, 64);
+  color: black;
+  border-radius: 50px;
+}
+.logo {
+  float: left;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 56px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  position: absolute;
+  top: 70%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  color: rgb(222, 160, 18);
+  font-size: 50px;
+}
+
+.button {
+  position: absolute;
+  top: 78%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  border: 1px solid #ddaf33dd;
+  padding: 5px 20px;
+  color: rgb(251, 251, 251);
+  transition: 0.5 ease;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background-color: azure;
+  color: black;
+}
+
+.sub-menu {
+  display: none;
+  top: 6%;
+  position: relative;
+}
+
+.sub-menu ul {
+  position: absolute;
+}
+
+.main ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: rgb(0, 45, 117);
+  margin-top: 12px;
+  margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu ul {
+  display: block;
+  margin: 6px;
+}
+
+.main ul li:hover .sub-menu ul li {
+  width: 75px;
+  padding: 5px;
+  border-bottom: 1px #fff;
+  background: transparent;
+  transition: 0.4 ease;
+  text-align: left;
+  border-radius: 0px;
+}
